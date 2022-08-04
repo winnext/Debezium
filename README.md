@@ -42,11 +42,15 @@
 - mongodb.name -> (resimde gösterilen yer) kafka topiclerinin başlangıç isimlerini verir.                                                                            ![image](https://user-images.githubusercontent.com/110333072/182694300-0f52c65f-46d3-4df3-856e-8696447f0308.png)
 
 - Debezium a post isteği atılırken register mongodb.json gönderilir
->curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @register-mongodb.json
-
+```
+curl-i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @register-mongodb.json
+```
 
 - Debezium a get isteği atılarak connecterler görüntülenebilir
->curl -H "Accept:application/json" localhost:8083/connectors/
+```
+curl -H "Accept:application/json" localhost:8083/connectors/
+```
+
 
 ## Test İçin
 
