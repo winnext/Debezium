@@ -1,0 +1,17 @@
+node consumer.js
+
+// kafka istekleri görüntülenebiliyor mu kontrolü
+node producer.js
+
+
+docker container exec -it mongodb bash
+
+mongo
+
+use signum
+
+// signum db sinde test collectionına veri ekleme
+db.test.insert({name:"test"})
+
+
+// ekleme yapıldığında kafka consumer a veri gelecek

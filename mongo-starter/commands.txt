@@ -1,0 +1,7 @@
+docker container exec -it mongodb bash
+
+mongo
+
+config = {"_id":"deneme","members":[{"_id":0,"host":"192.168.0.12:27017"}]}
+
+rs.initiate(config)

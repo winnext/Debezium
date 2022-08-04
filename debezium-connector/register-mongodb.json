@@ -1,0 +1,9 @@
+{
+    "name": "deneme2-connector",
+    "config": {
+        "connector.class" : "io.debezium.connector.mongodb.MongoDbConnector",
+        "tasks.max" : "1",
+        "mongodb.hosts" : "deneme/192.168.0.12:27017",
+        "mongodb.name" : "denememongo"
+    }
+}
